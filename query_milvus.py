@@ -1,5 +1,5 @@
  
-from pymilvus import connections, db, Collection
+from pymilvus import connections, Collection
 import cohere  
 
 def prepareDB():
