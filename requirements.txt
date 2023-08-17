@@ -1,4 +1,6 @@
-pymilvus==2.2.x
+protobuf==3.20.0
+grpcio-tools
+pymilvus==2.2.0
 cohere
 gradio
 transformers
