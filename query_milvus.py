@@ -45,11 +45,11 @@ def searchDB(query, collection=prepareDB()):
     for a in range(len(processed)):
         data+=(processed[a].entity.get("title")+"\n")
         data+=(processed[a].entity.get("text")+"\n")
-        data+=(processed[a].entity.get("url")+"\n\n")
+        data+=(processed[a].entity.get("url")+"\n")
+        data+=(str(processed[a].distance)+"\n\n")
 
     return data
     
 #just to test
 # result=searchDB("Abraham Lincoln?")
 # print(result)
-
