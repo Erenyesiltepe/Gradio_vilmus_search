@@ -18,7 +18,7 @@ def prepareDB():
     return collection
 
 def searchDB(query, collection=prepareDB()):
-    openai.api_key="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" 
+    openai.api_key="" 
     query_embedding = get_embedding(query)
     
     search_params = {

@@ -9,21 +9,21 @@ Before running the app insert the api keys to:
 2. cohere api key to query_milvus.py line 17. For cohere api key, visit https://dashboard.cohere.com/api-keys
 
 Steps to create databases:
-1. Insert your server's IP in the necessary fields of the scripts
+1. Insert your server's IP in the necessary fields of the jupyter notebooks
 2. Run all the cells in milvus_DB_creation_and_insertion.ipynb
-3. Run all the cells in milvus_DB_creation_and_insertion.ipynb
+3. Run all the cells in openai_embedding_DB_creation_and_insertion.ipynb
 
 To run with the UI:
     python3 gradio_db_ui.py
-    
+
 Gradio documentation: https://www.gradio.app/guides
 
 To just see the query result in cohere db without UI:
-1.  uncomment lines 54,55
-2. python3 query_milvus.py
+1.  Uncomment lines 54,55
+2. Run command: python3 query_milvus.py
 
 To just see the query result in openai db without UI:
-1.  uncomment lines 54,55
-2. python3 query_milvus.py
+1.  Uncomment lines 54,55
+2. Run command: python3 query_milvus.py
 
 For more detailed information about the program, you can check the files in milvus_DB_notebooks folder.

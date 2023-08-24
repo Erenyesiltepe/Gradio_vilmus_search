@@ -14,7 +14,7 @@ def prepareDB():
     return collection
 
 def searchDB(query, collection=prepareDB()):
-    co = cohere.Client("")  
+    co = cohere.Client("")  #insert cohere api key
     texts = [query]  
     response = co.embed(texts=texts, model='embed-multilingual-v2.0')  
     embeddings = response.embeddings # All text embeddings 
