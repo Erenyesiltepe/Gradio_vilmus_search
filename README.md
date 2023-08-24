@@ -4,6 +4,9 @@ Steps to create the server (You need to be root in the following processes):
 1. Install docker: https://docs.docker.com/engine/install/
 2. Install milvus with docker: https://milvus.io/docs/install_standalone-docker.md
 
+Install the required libraries by running:
+    pip install -r requirements.txt
+
 Before running the app insert the api keys to:
 1. open ai api key to openai_query.py line 21. For openai api key, visit https://platform.openai.com/account/api-keys
 2. cohere api key to query_milvus.py line 17. For cohere api key, visit https://dashboard.cohere.com/api-keys
@@ -24,6 +27,6 @@ To just see the query result in cohere db without UI:
 
 To just see the query result in openai db without UI:
 1.  Uncomment lines 54,55
-2. Run command: python3 query_milvus.py
+2. Run command: python3 openai_query.py
 
 For more detailed information about the program, you can check the files in milvus_DB_notebooks folder.
