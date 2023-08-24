@@ -3,7 +3,7 @@ from pymilvus import connections, Collection
 import cohere  
 
 def prepareDB():
-    _HOST = '161.97.138.217'
+    _HOST = '' #insert server ip here. If it is in local ip is 0.0.0.0
     _PORT = '19530'
 
     connections.connect(host=_HOST, port=_PORT, db_name="default")
@@ -14,7 +14,7 @@ def prepareDB():
     return collection
 
 def searchDB(query, collection=prepareDB()):
-    co = cohere.Client("0vrSwragivZlDzyVZhvaHwypUSXBSnEVqcrjoa4m")  
+    co = cohere.Client("")  
     texts = [query]  
     response = co.embed(texts=texts, model='embed-multilingual-v2.0')  
     embeddings = response.embeddings # All text embeddings 

@@ -7,7 +7,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
    return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
 def prepareDB():
-    _HOST = '161.97.138.217'
+    _HOST = ''#insert server ip here. If it is in local ip is 0.0.0.0
     _PORT = '19530'
 
     connections.connect(host=_HOST, port=_PORT, db_name="default")
